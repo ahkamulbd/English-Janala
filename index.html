@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
     <link rel="stylesheet" href="assets/logo.png">
 
     <!-- Font Awesome CDN -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
     <!-- Google Fonts - Poppins & Hind Siliguri -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,10 +23,46 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Style Sheet -->
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-    <h1>English Janala</h1>
+    <!-- <h1  class="text-3xl text-blue-500 text-center">English Janala</h1> -->
+
+    <header>
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                    </div>
+                    <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a>FAQ</a></li>
+                        <li><a>Lear</a></li>
+                        <li><a>Logout</a></li>
+
+                    </ul>
+                </div>
+                <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+                <a href="" class="flex items-center gap-1">
+                    <span>English</span>
+                    <img class="w-0.1" src="assets/logo.png" alt="">
+                    <span class="bangla-font">জানালা</span>
+                </a>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 ">
+                    <li class="btn btn-outline btn-primary"><a><i class="fa-solid fa-question"></i> FAQ</a></li>
+                    <li class="btn btn-outline btn-primary mx-3"><a><i class="fa-solid fa-book-open"></i> Learn</a></li>
+                    <li class="btn btn-outline btn-primary"><a><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>
